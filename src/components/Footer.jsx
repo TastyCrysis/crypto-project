@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaFacebookF, FaGithub, FaTiktok, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 
 const Footer = () => {
@@ -15,6 +16,12 @@ const Footer = () => {
               <li className="text-sm py-2">Contact Us</li>
               <li className="text-sm py-2">API Status</li>
               <li className="text-sm py-2">Documentation</li>
+              <li className="text-sm py-2">
+                <Link to="/privacy">Privacy</Link>
+              </li>
+              <li className="text-sm py-2">
+                <Link to="/imprint">Imprint</Link>
+              </li>
             </ul>
           </div>
           <div>

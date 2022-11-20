@@ -9,6 +9,8 @@ import Signup from "./routes/Signup";
 import axios from "axios";
 import CoinPage from "./routes/CoinPage";
 import Footer from "./components/Footer";
+import Imprint from "./components/Imprint";
+import Privacy from "./components/Privacy";
 
 function App() {
   const [coins, SetCoins] = useState([]);
@@ -34,6 +36,8 @@ function App() {
         <Route path="/coin/:coinId" element={<CoinPage />}>
           <Route path=":coinId" />
         </Route>
+        <Route path="/imprint" element={<Imprint />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
       <Footer />
     </ThemeProvider>
