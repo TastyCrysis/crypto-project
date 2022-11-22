@@ -11,6 +11,7 @@ import CoinPage from "./routes/CoinPage";
 import Footer from "./components/Footer";
 import Imprint from "./components/Imprint";
 import Privacy from "./components/Privacy";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [coins, SetCoins] = useState([]);
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <ThemeProvider>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home coins={coins} />} />
